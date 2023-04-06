@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Please upload your NFT metadata for decryption </title>
+</head>
+<style type="text/css">
+ *{
+     padding: 0;
+     margin: 0;
+
+
+ }
+ .big_box{
+     background: url('./img?name=zdna.jpg');
+     height: 100vh;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size:16pt;
+
+ }
+
+ .small_box{
+     text-align: left;
+     height: 50%;
+     width: 90%;
+     background-color: rgba(153, 153, 0, 0.9);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+</style>
+<body>
+<div class="big_box">
+<div class="small_box"><div>
+<h1>Decryption of your metadata:</h1>
+</BR></BR>
+
+<h1>{{ title }}</h1>
+
+    <form action="/zdna/decryption" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <table>
+    {{ form.as_table }}
+
+  </table>
+
+        </BR></BR>
+        <input type="submit" value=" Decrypt ">
+    </form>
+
+    <p>{{ rlt }}</p>    </br>
+    <a href="./encryption">Creation of encryption key</a> </br>
+<a href="./update">Update of your password</a> </br>
+<a href="./decryption">Decryption of encrypted NFT metadata </a>
+
+    <p>{{ rlt }}</p>
+    </div></div></div>
+</body>
+</html>

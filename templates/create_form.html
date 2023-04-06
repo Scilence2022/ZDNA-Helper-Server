@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Please input your MD5 values of your password and the NFT data </title>
+</head>
+<style type="text/css">
+ *{
+     padding: 0;
+     margin: 0;
+ }
+ .big_box{
+     background: url('./img?name=zdna.jpg');
+     height: 100vh;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+ .small_box{
+     text-align: center;
+     height: 40%;
+     width: 60%;
+     background-color: rgba(255, 255, 150, 0.6);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+</style>
+
+
+<body>
+<div class="big_box">
+<div class="small_box"><div>
+<h1>{{ title }}</h1>
+
+    <form action="/zdna/update" method="post">
+        {% csrf_token %}
+        MD5 value of your password: <input type="text" name="md5pass"> </BR></BR>
+        MD5 value of your NFT data:
+        <input type="text" name="md5data">
+        <input type="submit" value="Update">
+    </form>
+
+    <p>{{ rlt }}</p>
+
+</div></div></div>
+
+
+</body>
+</html>

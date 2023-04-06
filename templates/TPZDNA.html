@@ -1,0 +1,61 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> {{ title }} </title>
+</head>
+
+<style type="text/css">
+ *{
+     padding: 0;
+     margin: 0;
+
+
+ }
+ .big_box{
+     background: url('./zdna/img?name=zdna.jpg');
+     height: 100vh;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+
+ }
+
+ .small_box{
+     text-align: center;
+     height: 40%;
+     width: 90%;
+     background-color: rgba(153, 153, 0, 0.9);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    font-size:16pt;
+ }
+
+</style>
+<body>
+<div class="big_box">
+<div class="small_box"><div>
+
+<h1>A demo helper server for updates of encrypted NFT metadata</h1>
+
+
+<h1>{{ result }}</h1>
+    </br> </br>
+    </br>
+
+<a href="zdna/encryption">Creation of encryption key</a> </br> </br>
+<a href="zdna/update">Update your password</a> </br> </br>
+<a href="zdna/decryption">Decryption of encrypted NFT metadata </a> </br> </br>
+
+
+    <p>{{ rlt }}</p>
+
+</div></div></div>
+</body>
+</html>

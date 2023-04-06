@@ -1,0 +1,4 @@
+django
+hashlib
+numpy
+getopt

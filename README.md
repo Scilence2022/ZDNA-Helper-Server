@@ -1,1 +1,1 @@
-# ZDNA-Helper-Server
+This repository contains the source code for a demonstrative helper server used in NFT metadata encryption. The server is developed using the Django web development framework [https://www.djangoproject.com/]. An instance of this helper server is launched on an Amazon EC2 instance, accessible at [http://140.179.77.201:81/].
